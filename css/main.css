@@ -324,6 +324,10 @@ p {
   margin-bottom: 0;
 }
 
+.we-do {
+  display: none;
+}
+
 .portfolio__filter {
   display: flex;
   justify-content: center;

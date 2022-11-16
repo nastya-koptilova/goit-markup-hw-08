@@ -257,6 +257,36 @@ p {
     display: none;
   }
 }
+.hero {
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--footer-background-color);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/banner.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 118px;
+  padding-bottom: 118px;
+}
+
+.hero__title {
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.6153846154;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--main-background-color);
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.hero__btn {
+  min-width: 200px;
+  height: 50px;
+  margin: 0 auto;
+  display: block;
+}
+
 .portfolio__filter {
   display: flex;
   justify-content: center;

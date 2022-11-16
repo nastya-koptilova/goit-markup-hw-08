@@ -565,6 +565,16 @@ p {
   padding-bottom: 60px;
 }
 
+@media screen and (min-width: 768px) {
+  .footer__container {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 60px;
+  }
+}
+
 .footer__contacts-container {
   display: flex;
   flex-direction: column;
@@ -614,7 +624,12 @@ p {
   text-transform: uppercase;
   color: var(--main-background-color);
   margin-bottom: 20px;
-  margin-top: 60px;
+}
+@media screen and (min-width: 0) and (max-width: 767px) {
+  .footer__social-title,
+.footer__subscribe-label {
+    margin-top: 60px;
+  }
 }
 
 .footer__social-container {
@@ -688,6 +703,11 @@ p {
   font-size: 16px;
   line-height: 1.25;
   color: var(--footer-contacts-color);
+}
+@media screen and (min-width: 768px) {
+  .footer__subscribe-input {
+    width: 100vw;
+  }
 }
 
 .footer__subscribe-btn-container {

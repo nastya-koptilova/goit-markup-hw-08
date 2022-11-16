@@ -158,6 +158,10 @@
   &.is-open {
     transform: translateX(0);
   }
+
+  @media (min-width: 768px) {
+    display: none;
+  }
 }
 
 .header-mobile__nav-items:not(:last-child) {

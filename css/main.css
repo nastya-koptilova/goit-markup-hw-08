@@ -14,6 +14,13 @@
   --icons-color: #afb1b8;
 }
 
+.team__title {
+  font-size: 28px;
+  line-height: 1.17;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
 body {
   background: var(--main-background-color);
   font-family: var(--main-font-family);
@@ -53,8 +60,8 @@ p {
 }
 
 .section {
-  padding-bottom: 30px;
-  padding-top: 30px;
+  padding-bottom: 60px;
+  padding-top: 60px;
 }
 @media screen and (min-width: 1200px) {
   .section {
@@ -267,7 +274,6 @@ p {
   background-size: cover;
   padding-top: 118px;
   padding-bottom: 118px;
-  margin-bottom: 30px;
 }
 
 .hero__title {
@@ -326,6 +332,70 @@ p {
 
 .we-do {
   display: none;
+}
+
+.team {
+  background: var(--accent-background-color);
+}
+
+.team__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.team__items-container {
+  padding-top: 30px;
+}
+
+.team__items {
+  background: var(--main-background-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  border: none;
+  max-width: 450px;
+  margin-bottom: 30px;
+}
+
+.team__items-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.team__items-description {
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  color: var(--text-description-color);
+}
+
+.team__social {
+  display: flex;
+  padding-left: 122px;
+  padding-right: 122px;
+  padding-bottom: 24px;
+  margin-top: 16px;
+  gap: 10px;
+}
+
+.team__social-link {
+  display: inline-flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  color: var(--icons-color);
+  background-color: transparent;
+}
+
+.team__icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
 }
 
 .portfolio__filter {

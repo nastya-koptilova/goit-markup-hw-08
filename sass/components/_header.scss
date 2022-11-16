@@ -38,6 +38,10 @@
     color: #fff;
   }
 
+  .header-mobile &:hover {
+    fill: var(--object-active-color);
+  }
+
   @media (min-width: 768px) {
     display: none;
   }

@@ -121,6 +121,10 @@ p {
   overflow: hidden;
 }
 
+.hidden.active, .body-hidden.active {
+  overflow-y: hidden;
+}
+
 .page-header {
   position: relative;
 }

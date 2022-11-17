@@ -12,3 +12,13 @@
     refs.modal.classList.toggle("is-hidden");
   }
 })();
+
+const mobileMenu = () => {
+  const burger = document.querySelector("#burger");
+  const bodyhidden = document.querySelector(".body-hidden");
+  burger.addEventListener("click", () => {
+    bodyhidden.classList.toggle("active");
+  });
+};
+
+mobileMenu();

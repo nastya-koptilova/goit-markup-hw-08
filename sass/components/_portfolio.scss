@@ -6,6 +6,16 @@
   column-gap: 8px;
   max-width: 80vw;
   margin-bottom: 40px;
+
+  @include tablet {
+    justify-content: center;
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+
+  @include desktop {
+    margin-bottom: 56px;
+  }
 }
 
 .portfolio__filter-btn {
@@ -54,11 +64,13 @@
   }
 
   @include tablet {
+    height: 440px;
     width: calc((100% - 30px) / 2);
   }
 
   @include desktop {
-    width: calc((100% - 90px) / 3);
+    height: 404px;
+    width: calc((100% - 60px) / 3);
   }
 }
 

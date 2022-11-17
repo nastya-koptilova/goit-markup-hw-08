@@ -71,12 +71,23 @@ p {
 }
 
 .container {
+  width: 100%;
   margin: 0 auto;
   padding: 0 15px;
 }
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1200px;
+    max-width: 1200px;
   }
 }
 
@@ -188,7 +199,7 @@ p {
   }
 }
 
-@media screen and (min-width: 0) and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .header__contacts-list {
     display: flex;
     flex-direction: column;
@@ -420,26 +431,24 @@ p {
   height: 70px;
 }
 
-@media screen and (min-width: 768px) {
-  .benefits__list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
-  }
+.benefits__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
 }
 
-@media screen and (min-width: 0) and (max-width: 767px) {
-  .benefits__items {
-    margin-bottom: 30px;
-  }
-  .benefits__items:last-child {
-    margin-bottom: 0;
-  }
+.benefits__items {
+  width: 100%;
 }
 @media screen and (min-width: 768px) {
   .benefits__items {
-    max-width: 354px;
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .benefits__items {
+    width: calc((100% - 90px) / 4);
   }
 }
 
@@ -466,19 +475,9 @@ p {
 
 .team__list {
   display: flex;
-  align-items: center;
-}
-@media screen and (min-width: 0) and (max-width: 767px) {
-  .team__list {
-    flex-direction: column;
-  }
-}
-@media screen and (min-width: 768px) {
-  .team__list {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
-  }
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
 }
 
 .team__items-container {
@@ -490,16 +489,16 @@ p {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   border: none;
-  max-width: 450px;
-}
-@media screen and (min-width: 0) and (max-width: 767px) {
-  .team__items {
-    margin-bottom: 30px;
-  }
+  width: 100%;
 }
 @media screen and (min-width: 768px) {
   .team__items {
-    max-width: 354px;
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__items {
+    width: calc((100% - 90px) / 4);
   }
 }
 
@@ -570,6 +569,11 @@ p {
 @media screen and (min-width: 768px) {
   .clients__link {
     width: 226px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients__link {
+    width: 170px;
   }
 }
 

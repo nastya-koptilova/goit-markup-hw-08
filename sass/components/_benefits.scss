@@ -1,12 +1,12 @@
 .benefits__icon-container {
-  max-width: 100%;
-  height: 120px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--accent-background-color);
+  max-width: 100%;
+  height: 120px;
   margin-bottom: 30px;
   border-radius: 4px;
+  background-color: var(--accent-background-color);
 
   @media screen and (min-width: 768px) {
     width: 354px;
@@ -38,10 +38,10 @@
 }
 
 .benefits__list-title {
+  margin-bottom: 10px;
   font-size: 14px;
   font-weight: 700;
   line-height: calc(17 / 14);
-  margin-bottom: 10px;
   text-align: center;
 }
 

@@ -2,35 +2,34 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  margin-bottom: 40px;
   row-gap: 15px;
   column-gap: 8px;
   max-width: 80vw;
+  margin-bottom: 40px;
 }
 
 .portfolio__filter-btn {
   height: 38px;
-  background: var(--accent-background-color);
-  border-radius: 4px;
-  border: none;
+  padding-left: 22px;
+  padding-right: 22px;
+  font-family: var(--main-font-family);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
   text-align: center;
-  cursor: pointer;
-  font-family: var(--main-font-family);
+  border-radius: 4px;
+  border: none;
   color: var(--main-text-color);
-  padding-left: 22px;
-  padding-right: 22px;
+  background: var(--accent-background-color);
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
     color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,
   &:focus {
-    background: var(--object-active-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     color: var(--main-background-color);
+    background: var(--object-active-color);
   }
 }
 
@@ -42,9 +41,8 @@
 
 .portfolio__card {
   max-width: 450px;
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  cursor: pointer;
   margin-bottom: 30px;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:last-child {
     margin-bottom: 0;
@@ -63,11 +61,11 @@
 }
 
 .portfolio__card-title {
+  margin-bottom: 4px;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  margin-bottom: 4px;
 }
 
 .portfolio__card-description {

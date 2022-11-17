@@ -1,15 +1,15 @@
 .footer {
-  background: var(--footer-background-color);
   padding-top: 60px;
   padding-bottom: 60px;
+  background: var(--footer-background-color);
 }
 
 .footer__container {
   @media screen and (min-width: 768px) {
     display: flex;
+    justify-content: space-around;
     align-items: baseline;
     flex-wrap: wrap;
-    justify-content: space-around;
     gap: 60px;
   }
 }
@@ -25,8 +25,8 @@
   font-weight: 700;
   font-size: 24px;
   line-height: calc(28 / 24);
-  color: var(--main-background-color);
   text-align: center;
+  color: var(--main-background-color);
 
   &--span {
     color: var(--object-active-color);
@@ -34,11 +34,10 @@
 }
 
 .footer__contacts {
-  line-height: 1.71;
-  font-style: normal;
-  color: var(--main-background-color);
   margin-top: 20px;
   text-align: center;
+  line-height: 1.71;
+  color: var(--main-background-color);
 }
 
 .footer__contacts-address {
@@ -59,12 +58,12 @@
 
 .footer__social-title,
 .footer__subscribe-label {
+  margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--main-background-color);
-  margin-bottom: 20px;
 
   @media screen and (min-width: 0) and (max-width: 767px) {
     margin-top: 60px;
@@ -84,11 +83,11 @@
 
 .footer__social-link {
   display: inline-flex;
+  justify-content: center;
+  align-items: center;
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  align-items: center;
-  justify-content: center;
   background-color: var(--footer-social-background-color);
 }
 
@@ -114,15 +113,16 @@
   width: 90vw;
   max-width: 450px;
   height: 50px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-  border-radius: 4px;
-  background-color: transparent;
+  padding-left: 16px;
   font-size: 16px;
   line-height: calc(20 / 16);
   color: var(--footer-contacts-color);
-  padding-left: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
   outline: transparent;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: transparent;
+
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:focus {

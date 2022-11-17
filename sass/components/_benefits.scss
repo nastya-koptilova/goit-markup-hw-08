@@ -1,3 +1,9 @@
+.benefits {
+  @include desktop {
+    padding-bottom: 0px;
+  }
+}
+
 .benefits__icon-container {
   display: flex;
   align-items: center;
@@ -8,7 +14,7 @@
   border-radius: 4px;
   background-color: var(--accent-background-color);
 
-  @media screen and (min-width: 768px) {
+  @include tablet {
     width: 354px;
   }
 }
@@ -28,11 +34,11 @@
 .benefits__items {
   width: 100%;
 
-  @media screen and (min-width: 768px) {
+  @include tablet {
     width: calc((100% - 30px) / 2);
   }
 
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     width: calc((100% - 90px) / 4);
   }
 }

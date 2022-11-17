@@ -30,13 +30,13 @@
     color: var(--object-active-color);
   }
 
-  @media screen and (min-width: 768px) {
+  @include tablet {
     padding-top: 26px;
     padding-bottom: 26px;
     margin-right: 87px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     padding-top: 24px;
     padding-bottom: 25px;
     margin-right: 93px;
@@ -65,7 +65,7 @@
     fill: var(--object-active-color);
   }
 
-  @media (min-width: 768px) {
+  @include tablet {
     display: none;
   }
 }
@@ -90,7 +90,7 @@
     transform: translateX(0);
   }
 
-  @media (min-width: 768px) {
+  @include tablet {
     display: none;
   }
 }
@@ -168,15 +168,6 @@
 }
 
 .header_mobile-menu__social-items {
-  &::after {
-    content: "";
-    width: 100%;
-    height: 0;
-    border: 1px solid rgba(33, 33, 33, 0.2);
-  }
-}
-
-.header_mobile-menu__social-items {
   &::after,
   &--instagram::after {
     content: "";
@@ -211,7 +202,7 @@
 }
 
 .header__contacts-items {
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     margin-right: 50px;
 
     &:last-child {
@@ -254,7 +245,7 @@
   align-items: center;
   color: var(--text-description-color);
 
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     padding-top: 32px;
     padding-bottom: 32px;
   }

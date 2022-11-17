@@ -29,11 +29,11 @@
     color: var(--object-active-color);
   }
 
-  @media screen and (min-width: 768px) {
+  @include tablet {
     width: 226px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     width: 170px;
   }
 }

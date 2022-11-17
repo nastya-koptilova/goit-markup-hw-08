@@ -1,10 +1,17 @@
 .clients__title {
   @extend %section-title-mobile;
+
+  @include desktop {
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    margin-bottom: 50px;
+  }
 }
 
 .clients__list {
   display: flex;
-    justify-content: center;
+  justify-content: center;
   justify-items: center;
   flex-wrap: wrap;
   gap: 30px;
@@ -25,7 +32,7 @@
 
   &:hover,
   &:focus {
-        border: 1px solid var(--object-active-color);
+    border: 1px solid var(--object-active-color);
     color: var(--object-active-color);
   }
 

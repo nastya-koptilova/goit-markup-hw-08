@@ -17,6 +17,10 @@
   @include tablet {
     width: 354px;
   }
+
+  @include desktop {
+    width: 270px;
+  }
 }
 
 .benefits__icon {

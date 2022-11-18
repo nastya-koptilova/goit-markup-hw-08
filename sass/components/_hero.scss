@@ -4,15 +4,32 @@
   padding-top: 118px;
   padding-bottom: 118px;
   background-color: var(--footer-background-color);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/banner.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/banner-mob.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
+  @include retina {
+    background-image: var(--hero-gradient), url(../images/banner-mob-2x.jpg);
+  }
+
+  @include tablet {
+    background-image: var(--hero-gradient), url(../images/banner-tab.jpg);
+
+    @include retina {
+      background-image: var(--hero-gradient), url(../images/banner-tab-2x.jpg);
+    }
+  }
 
   @include desktop {
     max-width: 1600px;
     padding-top: 200px;
     padding-bottom: 200px;
+    background-image: var(--hero-gradient), url(../images/banner.jpg);
+
+    @include retina {
+      background-image: var(--hero-gradient), url(../images/banner-2x.jpg);
+    }
   }
 }
 

@@ -381,18 +381,39 @@ img {
 .header__contacts-link {
   display: inline-flex;
   align-items: center;
+  font-size: 12px;
+  line-height: 1.1666666667;
   color: var(--text-description-color);
 }
 @media screen and (min-width: 1200px) {
   .header__contacts-link {
     padding-top: 32px;
     padding-bottom: 32px;
+    font-size: 14px;
   }
 }
 
 .header__contacts-icon {
   margin-right: 10px;
   fill: currentColor;
+}
+.header__contacts-icon--tel {
+  width: 10px;
+  height: 14px;
+}
+.header__contacts-icon--mail {
+  width: 14px;
+  height: 10px;
+}
+@media screen and (min-width: 1200px) {
+  .header__contacts-icon--tel {
+    width: 12px;
+    height: 16px;
+  }
+  .header__contacts-icon--mail {
+    width: 16px;
+    height: 12px;
+  }
 }
 
 .header__nav-items .current {
@@ -540,6 +561,11 @@ img {
   font-weight: 700;
   line-height: 1.21;
   text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .benefits__list-title {
+    text-align: left;
+  }
 }
 
 .benefits__list-description {
@@ -1192,6 +1218,11 @@ img {
   color: var(--text-description-color);
 }
 @media screen and (min-width: 480px) {
+  .modal__policy-text {
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 1200px) {
   .modal__policy-text {
     font-size: 14px;
   }

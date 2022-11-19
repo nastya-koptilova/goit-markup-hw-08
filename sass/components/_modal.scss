@@ -182,6 +182,10 @@
   color: var(--text-description-color);
 
   @include mobile {
+    font-size: 12px;
+  }
+
+  @include desktop {
     font-size: 14px;
   }
 }
